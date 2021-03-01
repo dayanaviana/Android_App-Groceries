@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <!--    Shipping Information-->
+    <RelativeLayout
+        android:id="@+id/layout_address_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txt_address_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivery Address"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txt_address_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address_title"
+            android:text="Type"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_address_houseNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address_title"
+            android:layout_toRightOf="@id/txt_address_type"
+            android:layout_marginLeft="10dp"
+            android:text="House Number"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_address_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address_title"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txt_address_houseNo"
+            android:text="Street Name"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_address_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address_street"
+            android:text="City"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/txt_adress_zipcode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_address_street"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/txt_address_city"
+            android:text="Zip Code"
+            android:textSize="18dp" />
+    </RelativeLayout>
+    <!--Order Summary-->
+    <TextView
+        android:id="@+id/txt_order_summary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary:"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_order_amount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Order Amount: "
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/txt_order_discount"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Discount: "
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/txt_order_ourPrice"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Our Price: "
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/txt_order_delivery"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Delivery Charges: "
+            android:textSize="18dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/layout_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+
+
+
+
+
+
+
+        <TextView
+            android:id="@+id/txt_order_total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Amount: "
+            android:textSize="18dp" />
+    </LinearLayout>
+    <!-- Order Information -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp">
+        <TextView
+            android:id="@+id/txt_order_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order Date"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/txt_order_id"
+            android:layout_below="@+id/txt_order_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Order ID"
+            android:textSize="14dp"/>
+
+
+
+        <TextView
+            android:id="@+id/txt_pay_mode"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Mode"
+            android:textAlignment="textEnd"
+            android:textSize="14dp"/>
+        <TextView
+            android:id="@+id/txt_pay_status"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txt_pay_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Payment Status"
+            android:textAlignment="textEnd"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+</LinearLayout>

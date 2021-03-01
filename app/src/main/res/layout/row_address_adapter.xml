@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/row_address">
+
+    <TextView
+        android:id="@+id/txt_row_type"
+        android:layout_toRightOf="@+id/radio_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textSize="18dp"
+        android:textColor="#000"/>
+    <TextView
+        android:id="@+id/row_street"
+        android:layout_below="@+id/txt_row_type"
+        android:layout_toRightOf="@+id/radio_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Street: "/>
+    <TextView
+        android:id="@+id/txt_row_houseNo"
+        android:layout_toRightOf="@+id/row_street"
+        android:layout_below="@+id/txt_row_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="527"/>
+    <TextView
+        android:id="@+id/txt_row_street"
+        android:layout_below="@+id/txt_row_type"
+        android:layout_toRightOf="@+id/txt_row_houseNo"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street Name"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/row_city"
+        android:layout_below="@id/txt_row_street"
+        android:layout_toRightOf="@+id/radio_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="City:"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/txt_row_city"
+        android:layout_below="@id/txt_row_street"
+        android:layout_toRightOf="@id/row_city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:text="New York"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/row_zipcode"
+        android:layout_below="@+id/txt_row_street"
+        android:layout_toRightOf="@id/txt_row_city"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZipCode:"
+        android:textSize="18dp"/>
+    <TextView
+        android:id="@+id/txt_row_zipcode"
+        android:layout_below="@+id/txt_row_street"
+        android:layout_toRightOf="@id/row_zipcode"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZIP Code"
+        android:textSize="18dp"/>
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/btn_delete_item"
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_delete" />
+    <RadioButton
+        android:visibility="visible"
+        android:id="@+id/radio_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerVertical="true"/>
+
+
+
+</RelativeLayout>

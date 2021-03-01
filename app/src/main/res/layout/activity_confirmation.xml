@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:visibility="visible"
+        android:id="@+id/img_thank_you"
+        android:layout_width="match_parent"
+        android:layout_marginTop="100dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/thank_you_star" />
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_sorry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="Sorry, \n An Error Occured."
+        android:textSize="32dp"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/txt_order_response"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_thank_you"
+        android:text=" "
+        android:layout_marginTop="50dp"
+        android:textSize="24dp"
+        android:layout_centerHorizontal="true"
+        />
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/txt_order_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_order_placed"
+        android:textAlignment="center"
+        android:layout_marginTop="50dp"
+        android:text="@string/order_details"
+        android:textSize="24dp"
+        android:textColor="#0645AD"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="60dp"
+        android:background="@color/good_food_bg"
+        android:textColor="#FFF"
+        android:text="Return to Home"
+        android:onClick="btnReturnToHome_onClick"/>
+
+
+</RelativeLayout>

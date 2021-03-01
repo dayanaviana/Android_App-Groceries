@@ -1,0 +1,119 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/app_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delivery Adress"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"
+            android:textSize="32dp" />
+
+        <EditText
+            android:id="@+id/edt_address_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="House Number"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/edt_address_street"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Street"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/edt_address_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"/>
+
+        <EditText
+            android:id="@+id/edt_address_zipcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zip Code"
+            android:inputType="number"
+            android:textSize="18dp"
+            android:layout_marginBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Address type:"
+            android:textSize="18dp"
+            android:textColor="#000"
+            android:padding="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_office"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Office"
+                android:onClick="radioButton_onCLick"/>
+
+            <RadioButton
+                android:id="@+id/radio_home"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:onClick="radioButton_onCLick"/>
+
+            <RadioButton
+                android:id="@+id/radio_other"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="Other"
+                android:onClick="radioButton_onCLick" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btn_new_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Add new address"
+            android:onClick="newAdress_onClick"
+            android:background="@color/green_sage"
+            android:textColor="#FFF"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/txt_error_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Error Message"
+            android:textColor="#FF0000"
+            android:textSize="20dp"/>
+
+
+    </LinearLayout>
+</LinearLayout>
